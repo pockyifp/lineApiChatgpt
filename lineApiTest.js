@@ -12,68 +12,6 @@ const config = {
   channelSecret: process.env.CHANNEL_SECRET,
 };
 
-const flexMessage = {
-    "type": "bubble",
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "image",
-          "url": "https://developers-resource.landpress.line.me/fx/clip/clip3.jpg",
-          "size": "full",
-          "aspectMode": "cover",
-          "aspectRatio": "1:1",
-          "gravity": "center"
-        },
-        {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [],
-          "position": "absolute",
-          "width": "100%",
-          "height": "40%",
-          "offsetBottom": "0px",
-          "offsetStart": "0px",
-          "offsetEnd": "0px",
-          "backgroundColor": "#00000099"
-        },
-        {
-          "type": "box",
-          "layout": "horizontal",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "horizontal",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "請上傳圖片",
-                      "size": "xl",
-                      "color": "#ffffff",
-                      "weight": "bold"
-                    }
-                  ]
-                }
-              ],
-              "spacing": "xs"
-            }
-          ],
-          "position": "absolute",
-          "offsetBottom": "0px",
-          "offsetStart": "0px",
-          "offsetEnd": "0px",
-          "paddingAll": "20px"
-        }
-      ],
-      "paddingAll": "0px"
-    }
-};
-
 const chatgptKey = process.env.OPENAI_API_KEY;
 
 const client = new line.Client(config);
